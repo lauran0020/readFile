@@ -2,26 +2,19 @@ package com.flexon.readFile;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Collections;
+import java.util.*;
+import java.net.URL;
 
 
-public class readFile{
-    String fp;
-    readFile(String fp) {
-            this.fp = fp;
-        }
+public class ReadFile{
+    URL url = getClass().getResource("example.txt");
+    String fp = url.getPath();   
         
     public List<String> read() throws FileNotFoundException{
-        // define the filepath and creat the file object
-        
+        // define the filepath and create the file object
         File f = new File(fp);
         Scanner fileData = new Scanner(f);
+        System.out.println(fp);
 
         // create ans list to record words that appear more than 5 times
         // create wordOrder list to record the order of words that longer than 3 characters

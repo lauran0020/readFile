@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.flexon.readFile.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.04 s <<< FAILURE! - in com.flexon.readFile.AppTest
+readFileThroughValidPath(com.flexon.readFile.AppTest)  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method of(String, String, String, String, String) is undefined for the type List
+
+	at com.flexon.readFile.AppTest.readFileThroughValidPath(AppTest.java:16)
+

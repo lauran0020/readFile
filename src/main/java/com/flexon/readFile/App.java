@@ -5,10 +5,10 @@ import java.util.*;
 
 public class App 
 {
-       
+   
     public static void main(String[] args){
-        final String fp =  "src/files/example.txt";
-        readFile r = new readFile(fp);
+        
+        ReadFile r = new ReadFile();
         try {
             List<String> ans = r.read();
             for (String s : ans) {
@@ -17,7 +17,7 @@ public class App
         }
         catch (FileNotFoundException e) {
             System.out.println("******Invalid File Directory******");
-            System.out.println("Please create an example.txt file in the following directory:");
+            System.out.println("Please create and name the file as example.txt in the same package of App.java:");
             System.out.println("src/files/example.txt");
         }
         
